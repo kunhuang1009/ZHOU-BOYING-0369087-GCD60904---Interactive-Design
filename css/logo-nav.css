@@ -1,0 +1,340 @@
+
+.logo .logo-icon {
+    margin-right: 30px !important;
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        position: fixed;
+        top: 20px;
+        left: 25px;
+        z-index: 1001;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        position: static;
+        color: white;
+        width: auto;
+        justify-content: flex-start;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-icon {
+        color: white;
+        font-size: 1.8rem;
+        margin-right: 12px;
+    }
+
+    .logo-text {
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    .hero-navigation {
+        top: 20px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-container {
+        top: 15px;
+        left: 20px;
+        height: 45px;
+    }
+
+    .logo-icon {
+        font-size: 1.6rem;
+        margin-right: 10px;
+    }
+
+    .logo-text {
+        font-size: 1.3rem;
+    }
+
+    .hero-navigation {
+        top: 15px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        top: 12px;
+        left: 15px;
+        height: 42px;
+    }
+
+    .logo-icon {
+        font-size: 1.5rem;
+        margin-right: 8px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .hero-navigation {
+        top: 12px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #home.hero-section {
+        min-height: 80vh;
+    }
+
+    .hero-content {
+        padding: 130px 0 60px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #home.hero-section {
+        min-height: 75vh;
+    }
+
+    .hero-content {
+        padding: 115px 0 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #home.hero-section {
+        min-height: 70vh;
+    }
+
+    .hero-content {
+        padding: 100px 0 30px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 4.5rem;
+        margin-bottom: 6rem;
+    }
+
+    .selection-controls {
+        flex-direction: column;
+        height: auto;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .selection-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 15px 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .selection-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .schedule-now-btn {
+        margin-top: 15px;
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1rem;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-navigation {
+        position: fixed;
+        top: 75px;
+        left: 0;
+        right: 0;
+        transform: none;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 15px;
+    }
+
+    .nav-capsule {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 25px;
+        padding: 8px 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .nav-menu .nav-link {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+        white-space: nowrap;
+    }
+
+    .selection-controls {
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .selection-item {
+        touch-action: manipulation;
+    }
+
+    .selection-icon-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .selection-label {
+        font-size: 0.9rem;
+    }
+
+    .selection-dropdown {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero-navigation {
+        padding: 8px 10px;
+    }
+
+    .nav-capsule {
+        padding: 6px 15px;
+        border-radius: 20px;
+    }
+
+    .nav-menu {
+        gap: 0.5rem;
+    }
+
+    .nav-menu .nav-link {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .selection-controls {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .selection-item {
+        padding: 12px 15px;
+        margin-bottom: 8px;
+    }
+
+    .selection-icon {
+        margin-right: 10px;
+    }
+
+    .selection-icon-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .selection-label {
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+
+    .selection-dropdown {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+        min-height: 35px;
+    }
+
+    .schedule-now-btn {
+        padding: 12px;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .nav-menu .nav-link {
+        font-size: 0.75rem;
+        padding: 5px 8px;
+    }
+
+    .selection-controls {
+        padding: 12px;
+    }
+
+    .selection-item {
+        padding: 10px 12px;
+        margin-bottom: 6px;
+    }
+
+    .selection-label {
+        font-size: 0.8rem;
+    }
+
+    .selection-dropdown {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+        min-height: 32px;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+
+    .nav-link,
+    .selection-item,
+    .schedule-now-btn {
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+    }
+
+    .selection-item:active {
+        background: rgba(255, 255, 255, 0.4);
+        transform: scale(0.98);
+    }
+
+    .nav-link:active {
+        background: rgba(255, 193, 7, 0.3);
+    }
+
+    .schedule-now-btn:active {
+        transform: scale(0.96);
+    }
+}
+
+
+

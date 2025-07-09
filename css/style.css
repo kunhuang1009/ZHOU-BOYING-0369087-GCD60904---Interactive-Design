@@ -14,8 +14,7 @@ body {
     overflow-x: hidden;
 }
 
-/* 移除与logo相关的样式，使用navbar.css中的定义 */
-/*
+/* === LOGO === */
 .logo-container {
     position: absolute;
     top: 40px;
@@ -35,16 +34,15 @@ body {
     color: white;
 }
 
+option{
+	color: black !important;
+}
+
 .logo-text {
     font-size: 1.8rem;
     font-weight: 900;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-*/
-
-option{
-	color: black !important;
 }
 
 /* === HERO SECTION === */
@@ -937,7 +935,6 @@ option{
 }
 
 @media (max-width: 768px) {
-    /* 移除与logo相关的媒体查询样式
     .logo-container {
         top: 20px;
         left: 20px;
@@ -950,7 +947,6 @@ option{
     .logo-text {
         font-size: 1.3rem;
     }
-    */
     
     /* 导航栏样式已移至navbar.css */
     /*
@@ -1127,7 +1123,6 @@ option{
 }
 
 @media (max-width: 576px) {
-    /* 移除与logo相关的媒体查询样式
     .logo-container {
         top: 15px;
         left: 15px;
@@ -1141,7 +1136,6 @@ option{
     .logo-text {
         font-size: 1.1rem;
     }
-    */
     
     /* 导航栏样式已移至navbar.css */
     /*

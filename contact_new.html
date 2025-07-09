@@ -12,13 +12,13 @@
     <link href="css/common.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/page3.css" rel="stylesheet">
+    <link href="css/logo-nav.css" rel="stylesheet">
     <style>
-       
         .social-icons {
             display: flex;
             gap: 15px;
         }
-        
+
         .social-icon {
             display: flex;
             align-items: center;
@@ -31,74 +31,49 @@
             text-decoration: none;
             transition: background-color 0.3s;
         }
-        
+
         .social-icon:hover {
             background-color: #46291a;
         }
-        
-        /* 添加logo样式，确保与index.html一致 */
-        .logo {
-            position: absolute;
-            top: 60px;
-            left: 50px;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            color: white;
-        }
-        
-        .logo-icon {
-            font-size: 2rem;
-            margin-right: 12px;
-            color: white;
-        }
-        
-        .logo-text {
-            font-size: 1.8rem;
-            font-weight: 900;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin-left: 10px;
-        }
-        
-        
+
+
         .footer-title {
             font-size: 2.5rem;
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 1.5rem;
         }
-        
+
         .footer-heading {
             font-size: 1.3rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
         }
-        
+
         .footer-text {
             color: #aaa;
             line-height: 1.6;
             font-size: 1rem;
             margin-bottom: 0.5rem;
         }
-        
+
         .footer-link {
             color: #aaa;
             text-decoration: none;
             transition: color 0.3s;
             font-size: 1rem;
         }
-        
+
         .footer-link:hover {
             color: white;
         }
-        
+
         .footer-copyright {
             color: #777;
             font-size: 1rem;
             margin-bottom: 0;
         }
-        
+
         .footer-bottom-link {
             color: #aaa;
             text-decoration: none;
@@ -106,13 +81,13 @@
             font-size: 0.9rem;
             transition: color 0.3s;
         }
-        
+
         .footer-bottom-link:first-child {
             color: white;
             font-weight: 600;
         }
-        
-       
+
+
         .payment-methods {
             display: flex;
             gap: 8px;
@@ -120,7 +95,7 @@
             justify-content: flex-start;
             align-items: center;
         }
-        
+
         .payment-icon {
             width: 55px;
             height: 35px;
@@ -131,7 +106,7 @@
             background-color: transparent;
             display: block;
         }
-        
+
         .payment-icon img {
             width: 100%;
             height: 100%;
@@ -139,8 +114,8 @@
             display: block;
             transform: scale(1.3);
         }
-        
-        
+
+
         .footer-section {
             background-color: #222;
             color: #fff;
@@ -149,67 +124,67 @@
             z-index: 1;
             width: 100%;
         }
-        
+
         .footer-divider {
             border-color: #333;
             margin: 4rem 0;
             border-width: 2px;
         }
 
-        
+
         .contact-form-section {
             padding: 80px 0;
             background-color: #f8f9fa;
         }
-        
+
         .contact-form {
             background-color: #fff;
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
         }
-        
+
         .form-control {
             padding: 12px 15px;
             border: 1px solid #ddd;
             border-radius: 5px;
             margin-bottom: 20px;
         }
-        
+
         .form-control:focus {
             border-color: #46291a;
             box-shadow: 0 0 0 0.25rem rgba(70, 41, 26, 0.25);
         }
-        
+
         .submit-btn {
             background-color: #46291a;
             color: white;
             border: none;
             padding: 12px 30px;
             font-weight: 600;
-            border-radius: 25px;
+            border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
-        
+
         .submit-btn:hover {
             background-color: #5a3723;
         }
-        
+
         .contact-info-box {
             background-color: #fff;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             height: 100%;
         }
-        
+
         .contact-info-item {
             margin-bottom: 25px;
             display: flex;
             align-items: flex-start;
         }
-        
+
         .contact-icon {
             width: 50px;
             height: 50px;
@@ -222,59 +197,59 @@
             color: #46291a;
             font-size: 1.5rem;
         }
-        
+
         .contact-text h5 {
             font-size: 1.1rem;
             margin-bottom: 5px;
             font-weight: 600;
         }
-        
+
         .contact-text p {
             color: #666;
             margin-bottom: 0;
             word-break: break-word;
             overflow-wrap: break-word;
         }
-        
+
         .contact-email {
             word-break: break-all;
         }
-        
+
         .contact-address {
             word-break: break-word;
             hyphens: auto;
         }
-        
+
         .map-container {
             height: 400px;
             border-radius: 10px;
             overflow: hidden;
             margin-top: 50px;
         }
-        
+
         /* 添加Contact Information响应式样式 */
         @media (max-width: 991px) {
             .contact-info-box {
                 margin-bottom: 30px;
             }
-            
+
             .contact-form-section {
                 padding: 60px 0;
             }
         }
-        
+
         @media (max-width: 767px) {
             .contact-form-section {
                 padding: 50px 0;
             }
-            
+
             .contact-info-item {
                 flex-direction: row;
                 align-items: flex-start;
                 margin-bottom: 20px;
                 flex-wrap: nowrap;
             }
-            
+
             .contact-icon {
                 width: 40px;
                 height: 40px;
@@ -282,7 +257,7 @@
                 flex-shrink: 0;
                 margin-right: 12px;
             }
-            
+
             .contact-text {
                 flex: 1;
                 overflow-wrap: break-word;
@@ -290,31 +265,31 @@
                 word-break: break-word;
                 max-width: 100%;
             }
-            
+
             .contact-text h5 {
                 font-size: 1rem;
                 margin-bottom: 4px;
             }
-            
+
             .contact-text p {
                 font-size: 0.9rem;
                 line-height: 1.5;
             }
         }
-        
+
         @media (max-width: 576px) {
             .contact-form {
                 padding: 25px 20px;
             }
-            
+
             .contact-info-box {
                 padding: 25px 20px;
             }
-            
+
             .contact-info-item {
                 margin-bottom: 20px;
             }
-            
+
             .contact-icon {
                 width: 35px;
                 height: 35px;
@@ -324,62 +299,62 @@
                 align-items: center;
                 justify-content: center;
             }
-            
+
             .contact-text h5 {
                 font-size: 0.95rem;
                 margin-bottom: 3px;
             }
-            
+
             .contact-text p {
                 font-size: 0.85rem;
                 line-height: 1.4;
                 margin-bottom: 0;
                 word-break: break-word;
             }
-            
+
             .map-container {
                 margin-top: 30px;
                 height: 300px;
             }
-            
+
             .contact-form-section {
                 padding: 40px 0;
             }
-            
+
             .row.g-4 {
                 --bs-gutter-x: 1rem;
             }
         }
-        
+
         @media (max-width: 480px) {
             .contact-form {
                 padding: 20px 15px;
             }
-            
+
             .contact-info-box {
                 padding: 20px 15px;
             }
-            
+
             .contact-text h5 {
                 font-size: 0.9rem;
             }
-            
+
             .contact-text p {
                 font-size: 0.8rem;
             }
-            
+
             .contact-icon {
                 width: 30px;
                 height: 30px;
                 font-size: 0.9rem;
                 margin-right: 8px;
             }
-            
+
             .submit-btn {
                 padding: 10px 20px;
                 font-size: 0.9rem;
             }
-            
+
             h3 {
                 font-size: 1.4rem;
             }
@@ -389,10 +364,14 @@
 
 <body>
 
-    <section id="home" class="hero-section position-relative" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('img/img5.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
-        <div class="logo">
-            <i class="fa fa-leaf logo-icon"></i>
-            <a href="index.html" style="text-decoration: none; color: inherit;"><span class="logo-text">FENCE</span></a>
+    <section id="home" class="hero-section position-relative"
+        style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('img/img5.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="logo-container">
+            <div class="logo">
+                <i class="fa fa-leaf logo-icon"></i>
+                <a href="index.html" style="text-decoration: none; color: inherit;"><span
+                        class="logo-text">FENCE</span></a>
+            </div>
         </div>
 
         <nav class="hero-navigation">
@@ -429,18 +408,19 @@
         </div>
     </section>
 
-   
+
     <section class="contact-form-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
                     <h2 class="fw-bold">Get In Touch</h2>
-                    <p class="text-muted">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    <p class="text-muted">We'd love to hear from you. Send us a message and we'll respond as soon as
+                        possible.</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
-               
+
                 <div class="col-lg-7">
                     <div class="contact-form">
                         <h3 class="mb-4">Send us a message</h3>
@@ -460,22 +440,23 @@
                         </form>
                     </div>
                 </div>
-                
-                
+
+
                 <div class="col-lg-5">
                     <div class="contact-info-box">
                         <h3 class="mb-4">Contact Information</h3>
-                        
+
                         <div class="contact-info-item">
                             <div class="contact-icon">
                                 <i class="bi bi-geo-alt-fill"></i>
                             </div>
                             <div class="contact-text">
                                 <h5>Our Location</h5>
-                                <p class="contact-address">14546 Clear Creek Knolls Dr, Redding, CA 96001‑9542, United States</p>
+                                <p class="contact-address">14546 Clear Creek Knolls Dr, Redding, CA 96001‑9542, United
+                                    States</p>
                             </div>
                         </div>
-                        
+
                         <div class="contact-info-item">
                             <div class="contact-icon">
                                 <i class="bi bi-telephone-fill"></i>
@@ -485,7 +466,7 @@
                                 <p>+1 530-244-2158</p>
                             </div>
                         </div>
-                        
+
                         <div class="contact-info-item">
                             <div class="contact-icon">
                                 <i class="bi bi-envelope-fill"></i>
@@ -495,7 +476,7 @@
                                 <p class="contact-email">PacificCoastFence81@gmail.com</p>
                             </div>
                         </div>
-                        
+
                         <div class="contact-info-item">
                             <div class="contact-icon">
                                 <i class="bi bi-clock-fill"></i>
@@ -508,29 +489,32 @@
                     </div>
                 </div>
             </div>
-            
-          
+
+
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.3063874233135!2d-122.4194155!3d40.6781125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54d2f2480d8fd7c5%3A0xdea1f9d5a3c6f495!2s14546%20Clear%20Creek%20Knolls%20Dr%2C%20Redding%2C%20CA%2096001!5e0!3m2!1sen!2sus!4v1654789542167!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.3063874233135!2d-122.4194155!3d40.6781125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54d2f2480d8fd7c5%3A0xdea1f9d5a3c6f495!2s14546%20Clear%20Creek%20Knolls%20Dr%2C%20Redding%2C%20CA%2096001!5e0!3m2!1sen!2sus!4v1654789542167!5m2!1sen!2sus"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
 
-   
+
     <footer id="contact" class="footer-section py-4">
         <div class="container pt-4 mt-4" style="max-width: 1250px;">
             <div class="row g-4 pt-3 mt-3">
-                
+
                 <div class="col-lg-3 col-md-6">
                     <h2 class="footer-title mb-4 pt-3">Ready To Build<br>Your Fence?</h2>
                     <a href="contact_new.html" class="btn footer-btn px-4 py-2 fw-bold">Get A Free Quote</a>
                 </div>
 
-                
+
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading mb-4 pt-3">Quick Link</h5>
                     <ul class="list-unstyled">
-                       <li class="mb-3"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="mb-3"><a href="index.html" class="footer-link">Home</a></li>
                         <li class="mb-3"><a href="services_new.html" class="footer-link">Services</a></li>
                         <li class="mb-3"><a href="products_new.html" class="footer-link">Products</a></li>
                         <li class="mb-3"><a href="about_new.html" class="footer-link">About</a></li>
@@ -538,15 +522,17 @@
                     </ul>
                 </div>
 
-                
+
                 <div class="col-lg-3 col-md-6 pt-3">
                     <div class="contact-section mb-4">
-                        <h5 class="footer-heading mb-3"><i class="bi bi-telephone-fill me-2 footer-icon"></i>More Inquiry</h5>
+                        <h5 class="footer-heading mb-3"><i class="bi bi-telephone-fill me-2 footer-icon"></i>More
+                            Inquiry</h5>
                         <p class="footer-text">+1 530-244-2158</p>
                     </div>
 
                     <div class="contact-section mb-4">
-                        <h5 class="footer-heading mb-3"><i class="bi bi-envelope-fill me-2 footer-icon"></i>Send Mail</h5>
+                        <h5 class="footer-heading mb-3"><i class="bi bi-envelope-fill me-2 footer-icon"></i>Send Mail
+                        </h5>
                         <p class="footer-text">PacificCoastFence81@gmail.com</p>
                     </div>
 
@@ -556,10 +542,11 @@
                     </div>
                 </div>
 
-                
+
                 <div class="col-lg-3 col-md-6 pt-3">
                     <h5 class="footer-heading mb-3">We Are Here</h5>
-                    <p class="footer-text mb-4">We provide safe, stylish, and affordable fencing solutions to enhance your outdoor space. Built to last, designed with care.</p>
+                    <p class="footer-text mb-4">We provide safe, stylish, and affordable fencing solutions to enhance
+                        your outdoor space. Built to last, designed with care.</p>
 
                     <h5 class="footer-heading mb-3">Payment Partner</h5>
                     <div class="payment-methods">
@@ -577,10 +564,22 @@
             <div class="row align-items-center footer-bottom py-3 mt-2">
                 <div class="col-md-8 d-flex align-items-center">
                     <div class="social-icons me-5">
-                        <a href="#" class="social-icon" style="transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';" onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon" style="transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';" onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i class="bi bi-whatsapp"></i></a>
-                        <a href="#" class="social-icon" style="transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';" onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon" style="transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';" onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="social-icon" style="transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';"
+                            onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon" style="transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';"
+                            onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="social-icon" style="transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';"
+                            onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon" style="transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';"
+                            onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i
+                                class="bi bi-tiktok"></i></a>
                     </div>
                     <p class="footer-copyright mb-0">©Copyright 2025 Pacific Coast Fence | Design by Zhou Boying</p>
                 </div>
@@ -596,10 +595,9 @@
         </div>
     </footer>
 
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -616,13 +614,15 @@
 
         window.addEventListener('scroll', function () {
             const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('navbar-scrolled');
-            } else {
-                navbar.classList.remove('navbar-scrolled');
+            if(navbar){
+                if (window.scrollY > 50) {
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                }
             }
         });
     </script>
 </body>
 
-</html> 
+</html>

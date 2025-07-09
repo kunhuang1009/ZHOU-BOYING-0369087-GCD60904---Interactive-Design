@@ -12,13 +12,13 @@
     <link href="css/common.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/page3.css" rel="stylesheet">
+    <link href="css/logo-nav.css" rel="stylesheet">
     <style>
-       
         .social-icons {
             display: flex;
             gap: 15px;
         }
-        
+
         .social-icon {
             display: flex;
             align-items: center;
@@ -31,74 +31,49 @@
             text-decoration: none;
             transition: background-color 0.3s;
         }
-        
+
         .social-icon:hover {
             background-color: #46291a;
         }
-        
-        /* 添加logo样式，确保与index.html一致 */
-        .logo {
-            position: absolute;
-            top: 60px;
-            left: 50px;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            color: white;
-        }
-        
-        .logo-icon {
-            font-size: 2rem;
-            margin-right: 12px;
-            color: white;
-        }
-        
-        .logo-text {
-            font-size: 1.8rem;
-            font-weight: 900;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            margin-left: 10px;
-        }
-        
-       
+
+
         .footer-title {
             font-size: 2.5rem;
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 1.5rem;
         }
-        
+
         .footer-heading {
             font-size: 1.3rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
         }
-        
+
         .footer-text {
             color: #aaa;
             line-height: 1.6;
             font-size: 1rem;
             margin-bottom: 0.5rem;
         }
-        
+
         .footer-link {
             color: #aaa;
             text-decoration: none;
             transition: color 0.3s;
             font-size: 1rem;
         }
-        
+
         .footer-link:hover {
             color: white;
         }
-        
+
         .footer-copyright {
             color: #777;
             font-size: 1rem;
             margin-bottom: 0;
         }
-        
+
         .footer-bottom-link {
             color: #aaa;
             text-decoration: none;
@@ -106,13 +81,13 @@
             font-size: 0.9rem;
             transition: color 0.3s;
         }
-        
+
         .footer-bottom-link:first-child {
             color: white;
             font-weight: 600;
         }
-        
-    
+
+
         .payment-methods {
             display: flex;
             gap: 8px;
@@ -120,7 +95,7 @@
             justify-content: flex-start;
             align-items: center;
         }
-        
+
         .payment-icon {
             width: 55px;
             height: 35px;
@@ -131,7 +106,7 @@
             background-color: transparent;
             display: block;
         }
-        
+
         .payment-icon img {
             width: 100%;
             height: 100%;
@@ -139,8 +114,8 @@
             display: block;
             transform: scale(1.3);
         }
-        
-        
+
+
         .footer-section {
             background-color: #222;
             color: #fff;
@@ -149,40 +124,40 @@
             z-index: 1;
             width: 100%;
         }
-        
+
         .footer-divider {
             border-color: #333;
             margin: 4rem 0;
             border-width: 2px;
         }
-        
-      
+
+
         .core-services-section {
             padding: 80px 0;
             background-color: #f8f9fa;
         }
-        
+
         .service-row {
             margin-bottom: 40px;
         }
-        
-        
+
+
         .product-card {
             background-color: #fff;
             border: none;
             border-radius: 12px;
             overflow: hidden;
             margin-bottom: 30px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
             padding: 0;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .product-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .product-image {
             width: 100%;
             height: 280px;
@@ -191,7 +166,7 @@
             border-radius: 0;
             margin-bottom: 0;
         }
-        
+
         .product-image img {
             position: absolute;
             top: 0;
@@ -201,22 +176,22 @@
             object-fit: cover;
             transition: transform 0.3s ease;
         }
-        
+
         .product-card:hover .product-image img {
             transform: scale(1.03);
         }
-        
+
         .product-info {
             padding: 25px 30px 30px;
         }
-        
+
         .product-title {
             font-size: 1.8rem;
             font-weight: 700;
             margin-bottom: 15px;
             color: #222;
         }
-        
+
         .product-description {
             font-size: 0.9rem;
             color: #777;
@@ -225,7 +200,7 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-        
+
         .product-divider {
             border: none;
             height: 2px;
@@ -236,14 +211,14 @@
             clear: both;
             opacity: 1;
         }
-        
+
         .starting-text {
             display: block;
             font-size: 0.9rem;
             color: #777;
             margin-bottom: 5px;
         }
-        
+
         .product-price {
             font-size: 2rem;
             font-weight: 700;
@@ -251,14 +226,14 @@
             margin-bottom: 0;
             display: inline-block;
         }
-        
+
         .per-foot {
             display: block;
             font-size: 0.9rem;
             color: #999;
             margin-top: 5px;
         }
-        
+
         .quote-btn {
             display: inline-block;
             background-color: #46291a;
@@ -268,31 +243,31 @@
             font-size: 1rem;
             text-decoration: none;
             border: none;
-            border-radius: 4px;
+            border-radius: 25px;
             cursor: pointer;
             transition: background-color 0.3s ease;
             float: none;
             margin-top: 0;
         }
-        
+
         .quote-btn:hover {
             background-color: #5a3723;
             color: white;
         }
-        
+
         .price-container {
             display: inline-block;
         }
-        
+
         .action-row {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
         }
-        
-      
+
+
         .custom-design-section {
-            background-color: #FFF8F0; 
+            background-color: #FFF8F0;
             border-radius: 20px;
             background-image: url('img/footerpage.png?v=20240526');
             background-size: cover;
@@ -306,37 +281,37 @@
             max-width: 1240px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            z-index: 100; 
+            z-index: 100;
             max-width: 100vw;
         }
-        
+
         .custom-design-content {
             position: relative;
-            z-index: 102; 
+            z-index: 102;
             text-align: center;
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .custom-design-title {
             font-size: 3.2rem;
             font-weight: 700;
             color: #222;
             margin-bottom: 10px;
         }
-        
+
         .custom-design-subtitle {
             font-size: 1.1rem;
             color: #555;
             margin-bottom: 25px;
         }
-        
+
         .custom-design-form {
             display: flex;
             max-width: 700px;
             margin: 0 auto;
         }
-        
+
         .custom-design-input {
             flex: 1;
             padding: 15px 20px;
@@ -345,7 +320,7 @@
             font-size: 1rem;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
-        
+
         .custom-design-btn {
             background-color: #46291a;
             color: white;
@@ -357,16 +332,17 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
-        
+
         .custom-design-btn:hover {
             background-color: #5a3723;
         }
-        
-        
+
+
         .spacer-div {
             background-color: #f8f9fa;
             position: relative;
         }
+
         /* 添加自适应样式 */
         @media (max-width: 992px) {
             .custom-design-section {
@@ -374,67 +350,67 @@
                 width: 95%;
                 background-size: cover;
             }
-            
+
             .custom-design-title {
                 font-size: 2.8rem;
             }
         }
-        
+
         @media (max-width: 768px) {
             .custom-design-section {
                 padding: 40px 25px;
                 width: 95%;
             }
-            
+
             .custom-design-title {
                 font-size: 2.4rem;
             }
-            
+
             .custom-design-form {
                 flex-direction: column;
             }
-            
+
             .custom-design-input {
                 border-radius: 5px;
                 margin-bottom: 10px;
             }
-            
+
             .custom-design-btn {
                 border-radius: 5px;
                 width: 100%;
             }
-            
+
             .spacer-div {
                 height: 150px !important;
             }
         }
-        
+
         @media (max-width: 576px) {
             .custom-design-section {
                 padding: 30px 20px;
                 width: 92%;
                 border-radius: 15px;
             }
-            
+
             .custom-design-title {
                 font-size: 1.8rem;
             }
-            
+
             .custom-design-subtitle {
                 font-size: 0.9rem;
                 margin-bottom: 20px;
             }
-            
+
             .custom-design-input {
                 padding: 12px 15px;
                 font-size: 0.9rem;
             }
-            
+
             .custom-design-btn {
                 padding: 12px 15px;
                 font-size: 0.9rem;
             }
-            
+
             .spacer-div {
                 height: 130px !important;
             }
@@ -444,10 +420,13 @@
 
 <body>
 
-    <section id="home" class="hero-section position-relative" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('img/img1.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
-        <div class="logo">
-            <i class="fa fa-leaf logo-icon"></i>
-            <a href="index.html" style="text-decoration: none; color: inherit;"><span class="logo-text">FENCE</span></a>
+    <section id="home" class="hero-section position-relative">
+        <div class="logo-container">
+            <div class="logo">
+                <i class="fa fa-leaf logo-icon"></i>
+                <a href="index.html" style="text-decoration: none; color: inherit;"><span
+                        class="logo-text">FENCE</span></a>
+            </div>
         </div>
 
         <nav class="hero-navigation">
@@ -483,14 +462,14 @@
         </div>
     </section>
 
-   
+
     <section class="core-services-section">
         <div class="container">
-            
-            
-            
+
+
+
             <div class="row g-5 service-row">
-                
+
                 <div class="col-lg-6">
                     <div class="product-card">
                         <div class="product-image">
@@ -499,7 +478,7 @@
                         <div class="product-info">
                             <h3 class="product-title">Chain Link Fence</h3>
                             <p class="product-description">RELIABLE PROTECTION WITH AFFORDABILITY<br>
-                            IDEAL FOR BASIC SECURITY AND BOUNDARY DEFINITION IN HOMES AND COMMERCIAL AREAS.</p>
+                                IDEAL FOR BASIC SECURITY AND BOUNDARY DEFINITION IN HOMES AND COMMERCIAL AREAS.</p>
                             <hr class="product-divider">
                             <div class="action-row">
                                 <div class="price-container">
@@ -514,17 +493,18 @@
                         </div>
                     </div>
                 </div>
-                
-               
+
+
                 <div class="col-lg-6">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/b4102426-6fd1-45f8-984b-b387c84b022f_1751711553223717140~tplv-a9rns2rl98-web-preview-watermark.png" alt="Iron Fence">
+                            <img src="img/b4102426-6fd1-45f8-984b-b387c84b022f_1751711553223717140~tplv-a9rns2rl98-web-preview-watermark.png"
+                                alt="Iron Fence">
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Iron Fence</h3>
                             <p class="product-description">ELEGANT IRON CRAFTSMANSHIP<br>
-                            PROVIDES PREMIUM SECURITY WITH A TIMELESS, CLASSIC WROUGHT IRON STYLE.</p>
+                                PROVIDES PREMIUM SECURITY WITH A TIMELESS, CLASSIC WROUGHT IRON STYLE.</p>
                             <hr class="product-divider">
                             <div class="action-row">
                                 <div class="price-container">
@@ -540,10 +520,10 @@
                     </div>
                 </div>
             </div>
-            
-            
+
+
             <div class="row g-5 service-row">
-               
+
                 <div class="col-lg-6">
                     <div class="product-card">
                         <div class="product-image">
@@ -552,7 +532,7 @@
                         <div class="product-info">
                             <h3 class="product-title">Vinyl Fence</h3>
                             <p class="product-description">MODERN & LOW-MAINTENANCE<br>
-                            PERFECT FOR HOMEOWNERS SEEKING STYLISH, WEATHER-RESISTANT FENCING.</p>
+                                PERFECT FOR HOMEOWNERS SEEKING STYLISH, WEATHER-RESISTANT FENCING.</p>
                             <hr class="product-divider">
                             <div class="action-row">
                                 <div class="price-container">
@@ -567,17 +547,18 @@
                         </div>
                     </div>
                 </div>
-                
-               
+
+
                 <div class="col-lg-6">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/8285b842-227b-441c-9077-5d713b1ca72f_1751711623933156307~tplv-a9rns2rl98-web-preview-watermark.png" alt="Wooden Fence">
+                            <img src="img/8285b842-227b-441c-9077-5d713b1ca72f_1751711623933156307~tplv-a9rns2rl98-web-preview-watermark.png"
+                                alt="Wooden Fence">
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Wooden Fence</h3>
                             <p class="product-description">WARMTH OF NATURAL TIMBER<br>
-                            OFFERS PRIVACY WITH A COZY, NATURAL AESTHETIC, GREAT FOR GARDENS.</p>
+                                OFFERS PRIVACY WITH A COZY, NATURAL AESTHETIC, GREAT FOR GARDENS.</p>
                             <hr class="product-divider">
                             <div class="action-row">
                                 <div class="price-container">
@@ -593,19 +574,20 @@
                     </div>
                 </div>
             </div>
-            
-           
+
+
             <div class="row g-5 service-row">
-            
+
                 <div class="col-lg-6">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/5b96be49-1ea7-417f-ad86-df4c5cc65a61_1751711780475375591~tplv-a9rns2rl98-web-preview-watermark.png" alt="Retaining Walls">
+                            <img src="img/5b96be49-1ea7-417f-ad86-df4c5cc65a61_1751711780475375591~tplv-a9rns2rl98-web-preview-watermark.png"
+                                alt="Retaining Walls">
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Retaining Walls</h3>
                             <p class="product-description">STRONG & STRUCTURAL APPEAL<br>
-                            SUPPORTS LANDSCAPING WITH STRONG, AESTHETIC RETAINING STRUCTURE.</p>
+                                SUPPORTS LANDSCAPING WITH STRONG, AESTHETIC RETAINING STRUCTURE.</p>
                             <hr class="product-divider">
                             <div class="action-row">
                                 <div class="price-container">
@@ -620,16 +602,17 @@
                         </div>
                     </div>
                 </div>
-               
+
                 <div class="col-lg-6">
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="img/7251b26d-3a59-4412-a5f2-f431aba45995_1751711833132545258~tplv-a9rns2rl98-web-preview-watermark.png" alt="Patio Covers">
+                            <img src="img/7251b26d-3a59-4412-a5f2-f431aba45995_1751711833132545258~tplv-a9rns2rl98-web-preview-watermark.png"
+                                alt="Patio Covers">
                         </div>
                         <div class="product-info">
                             <h3 class="product-title">Patio Covers</h3>
                             <p class="product-description">SHADE WITH SOPHISTICATION<br>
-                            COVERS PATIOS FOR COMFORT AND UV PROTECTION, GREAT FOR OUTDOORS.</p>
+                                COVERS PATIOS FOR COMFORT AND UV PROTECTION, GREAT FOR OUTDOORS.</p>
                             <hr class="product-divider">
                             <div class="action-row">
                                 <div class="price-container">
@@ -649,16 +632,16 @@
     </section>
 
     <div class="spacer-div" style="height: 180px; position: relative; background-color: #222;"></div>
-    
-   
+
+
     <section class="custom-design-section">
-     
+
         <div class="container-fluid px-3">
             <div class="custom-design-content">
                 <h2 class="custom-design-title">Custom Fence Design</h2>
                 <p class="custom-design-subtitle">Fully personalized designs tailored to your property's needs.</p>
-                
-               
+
+
                 <form class="custom-design-form">
                     <input type="email" class="custom-design-input" placeholder="Enter Your Email Address...">
                     <a href="contact_new.html" class="custom-design-btn">Get a Quote</a>
@@ -667,17 +650,17 @@
         </div>
     </section>
 
-   
+
     <footer id="contact" class="footer-section py-4">
         <div class="container pt-4 mt-4" style="max-width: 1250px;">
             <div class="row g-4 pt-3 mt-3">
-               
+
                 <div class="col-lg-3 col-md-6">
                     <h2 class="footer-title mb-4 pt-3">Ready To Build<br>Your Fence?</h2>
                     <a href="contact_new.html" class="btn footer-btn px-4 py-2 fw-bold">Get A Free Quote</a>
                 </div>
 
-               
+
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading mb-4 pt-3">Quick Link</h5>
                     <ul class="list-unstyled">
@@ -689,15 +672,17 @@
                     </ul>
                 </div>
 
-               
+
                 <div class="col-lg-3 col-md-6 pt-3">
                     <div class="contact-section mb-4">
-                        <h5 class="footer-heading mb-3"><i class="bi bi-telephone-fill me-2 footer-icon"></i>More Inquiry</h5>
+                        <h5 class="footer-heading mb-3"><i class="bi bi-telephone-fill me-2 footer-icon"></i>More
+                            Inquiry</h5>
                         <p class="footer-text">+1 530-244-2158</p>
                     </div>
 
                     <div class="contact-section mb-4">
-                        <h5 class="footer-heading mb-3"><i class="bi bi-envelope-fill me-2 footer-icon"></i>Send Mail</h5>
+                        <h5 class="footer-heading mb-3"><i class="bi bi-envelope-fill me-2 footer-icon"></i>Send Mail
+                        </h5>
                         <p class="footer-text">PacificCoastFence81@gmail.com</p>
                     </div>
 
@@ -707,10 +692,11 @@
                     </div>
                 </div>
 
-               
+
                 <div class="col-lg-3 col-md-6 pt-3">
                     <h5 class="footer-heading mb-3">We Are Here</h5>
-                    <p class="footer-text mb-4">We provide safe, stylish, and affordable fencing solutions to enhance your outdoor space. Built to last, designed with care.</p>
+                    <p class="footer-text mb-4">We provide safe, stylish, and affordable fencing solutions to enhance
+                        your outdoor space. Built to last, designed with care.</p>
 
                     <h5 class="footer-heading mb-3">Payment Partner</h5>
                     <div class="payment-methods">
@@ -728,10 +714,22 @@
             <div class="row align-items-center footer-bottom py-3 mt-2">
                 <div class="col-md-8 d-flex align-items-center">
                     <div class="social-icons me-5">
-                        <a href="#" class="social-icon" style="transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';" onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon" style="transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';" onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i class="bi bi-whatsapp"></i></a>
-                        <a href="#" class="social-icon" style="transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';" onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon" style="transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';" onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="social-icon" style="transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';"
+                            onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon" style="transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';"
+                            onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i
+                                class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="social-icon" style="transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';"
+                            onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon" style="transition: all 0.3s ease;"
+                            onmouseover="this.style.backgroundColor='#555'; this.style.color='#ffc107';"
+                            onmouseout="this.style.backgroundColor='#333'; this.style.color='white';"><i
+                                class="bi bi-tiktok"></i></a>
                     </div>
                     <p class="footer-copyright mb-0">©Copyright 2025 Pacific Coast Fence | Design by Zhou Boying</p>
                 </div>
@@ -747,10 +745,9 @@
         </div>
     </footer>
 
-   
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -767,57 +764,49 @@
 
         window.addEventListener('scroll', function () {
             const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('navbar-scrolled');
-            } else {
-                navbar.classList.remove('navbar-scrolled');
+            if(navbar){
+                if (window.scrollY > 50) {
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                }
             }
         });
-        
-        // 定位Custom Fence Design区域的函数
+
         function positionCustomDesignSection() {
             const customDesignSection = document.querySelector('.custom-design-section');
             const footerSection = document.querySelector('.footer-section');
             const spacerDiv = document.querySelector('.spacer-div');
-            
+
             if (customDesignSection && footerSection && spacerDiv) {
-                // 获取页脚顶部位置
                 const footerTop = footerSection.getBoundingClientRect().top + window.scrollY;
-                
-                // 设置间隔区域高度
-                let spacerHeight = 180; // 增加间隔高度，让Custom Fence Design往下移
-                
-                // 根据屏幕宽度调整间隔高度
+                let spacerHeight = 180;
                 if (window.innerWidth <= 576) {
-                    spacerHeight = 130; // 小屏幕上增加间隔
+                    spacerHeight = 130;
                 } else if (window.innerWidth <= 768) {
-                    spacerHeight = 150; // 中等屏幕上增加间隔
+                    spacerHeight = 150;
                 }
-                
+
                 spacerDiv.style.height = spacerHeight + 'px';
-                spacerDiv.style.backgroundColor = '#222'; 
-                
-                // 根据屏幕宽度调整Custom Fence Design区域位置
-                let positionFactor = 1.0; // 减小覆盖因子，让它往下移
+                spacerDiv.style.backgroundColor = '#222';
+
+                let positionFactor = 1.0;
                 if (window.innerWidth <= 576) {
-                    positionFactor = 0.7; // 在小屏幕上减少覆盖
+                    positionFactor = 0.7;
                 } else if (window.innerWidth <= 768) {
-                    positionFactor = 0.8; // 在中等屏幕上适当覆盖
+                    positionFactor = 0.8;
                 } else if (window.innerWidth <= 992) {
-                    positionFactor = 0.9; // 在大屏幕上增加覆盖
+                    positionFactor = 0.9;
                 }
-                
-                // 添加额外的偏移量，使其向下移动
+
                 const extraOffset = 30;
                 customDesignSection.style.top = (footerTop - customDesignSection.offsetHeight * positionFactor + extraOffset) + 'px';
-                
-                // 确保宽度不超过视口宽度
+
                 const viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-                const sectionWidth = Math.min(viewportWidth * 0.9, 1240); // 取视口宽度的90%和1240px中的较小值
+                const sectionWidth = Math.min(viewportWidth * 0.9, 1240);
                 customDesignSection.style.width = sectionWidth + 'px';
                 customDesignSection.style.maxWidth = '100vw';
-                
-                // 添加背景填充元素
+
                 let backgroundFiller = document.getElementById('background-filler');
                 if (!backgroundFiller) {
                     backgroundFiller = document.createElement('div');
@@ -825,15 +814,14 @@
                     backgroundFiller.style.position = 'absolute';
                     backgroundFiller.style.left = '0';
                     backgroundFiller.style.width = '100%';
-                    backgroundFiller.style.backgroundColor = '#222'; 
-                    backgroundFiller.style.zIndex = '0'; 
+                    backgroundFiller.style.backgroundColor = '#222';
+                    backgroundFiller.style.zIndex = '0';
                     document.body.appendChild(backgroundFiller);
                 }
-                
-                // 调整背景填充元素的位置和高度
-                let fillerTop = footerTop - 170; // 调整背景填充元素的位置
+
+                let fillerTop = footerTop - 170;
                 let fillerHeight = 280;
-                
+
                 if (window.innerWidth <= 576) {
                     fillerTop = footerTop - 120;
                     fillerHeight = 200;
@@ -841,28 +829,21 @@
                     fillerTop = footerTop - 150;
                     fillerHeight = 240;
                 }
-                
+
                 backgroundFiller.style.top = fillerTop + 'px';
                 backgroundFiller.style.height = fillerHeight + 'px';
             }
         }
-        
-        // 页面加载和窗口大小改变时调整位置
+
         window.addEventListener('load', positionCustomDesignSection);
         window.addEventListener('resize', positionCustomDesignSection);
-        
-        // 确保页面完全加载后重新计算位置
-        document.addEventListener('DOMContentLoaded', function() {
-            // 初始定位
+
+        document.addEventListener('DOMContentLoaded', function () {
             positionCustomDesignSection();
-            
-            // 延迟200ms后再次定位，确保所有元素都已正确加载
             setTimeout(positionCustomDesignSection, 200);
-            
-            // 图片加载完成后再次定位
             const images = document.querySelectorAll('img');
             let loadedImagesCount = 0;
-            
+
             images.forEach(img => {
                 if (img.complete) {
                     loadedImagesCount++;
@@ -882,4 +863,4 @@
     </script>
 </body>
 
-</html> 
+</html>
