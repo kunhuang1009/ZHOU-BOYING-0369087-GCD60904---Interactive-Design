@@ -17,15 +17,19 @@ body {
 /* === LOGO === */
 .logo-container {
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 50px;
     z-index: 1000;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     display: flex;
     align-items: center;
     color: white;
+    height: 100%;
 }
 
 .logo-icon {
