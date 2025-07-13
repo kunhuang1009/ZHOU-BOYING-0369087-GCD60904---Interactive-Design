@@ -282,7 +282,12 @@ option{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    -webkit-object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -webkit-object-position: center;
     transition: transform 0.4s ease;
+    -webkit-transition: -webkit-transform 0.4s ease;
 }
 
 .fence-style-card:hover .fence-image-container img {
@@ -423,7 +428,12 @@ option{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    -webkit-object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -webkit-object-position: center;
     transition: transform 0.3s ease;
+    -webkit-transition: -webkit-transform 0.3s ease;
 }
 
 .promo-image:hover img {
@@ -571,6 +581,10 @@ option{
     height: 400px;
     width: 100%;
     object-fit: cover;
+    -webkit-object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -webkit-object-position: center;
 }
 
 /* === TESTIMONIALS SECTION === */
@@ -626,6 +640,10 @@ option{
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
+    -webkit-object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -webkit-object-position: center;
     border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -658,7 +676,12 @@ option{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    -webkit-object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -webkit-object-position: center;
     transition: transform 0.4s ease;
+    -webkit-transition: -webkit-transform 0.4s ease;
 }
 
 .team-member-card:hover .member-image img {
@@ -1465,6 +1488,58 @@ section {
     
     .footer-btn {
         margin-left: 5px; /* 超小屏幕下进一步减少按钮左边距 */
+    }
+}
+
+/* 苹果设备专用修复 */
+@supports (-webkit-appearance: none) {
+    /* Safari 专用修复 */
+    .fence-image-container img,
+    .promo-image img,
+    .welcome-team-img,
+    .avatar-img,
+    .member-image img {
+        object-fit: cover !important;
+        -webkit-object-fit: cover !important;
+        object-position: center !important;
+        -webkit-object-position: center !important;
+    }
+
+    /* 防止transform导致的图片变形 */
+    .fence-style-card:hover .fence-image-container img,
+    .promo-image:hover img,
+    .team-member-card:hover .member-image img {
+        transform: scale(1.05) !important;
+        -webkit-transform: scale(1.05) !important;
+    }
+}
+
+/* iOS 设备专用修复 */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-section {
+        background-attachment: scroll !important;
+        -webkit-background-attachment: scroll !important;
+    }
+
+    .fence-image-container,
+    .promo-image,
+    .member-image {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .fence-image-container img,
+    .promo-image img,
+    .member-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -webkit-object-fit: cover;
+        object-position: center;
+        -webkit-object-position: center;
     }
 }
 

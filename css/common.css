@@ -112,6 +112,15 @@ body {
     justify-content: center;
 }
 
+/* 移动设备背景修复 */
+@media screen and (max-width: 768px) {
+    .hero-section,
+    .hero-section2 {
+        background-attachment: scroll !important;
+        -webkit-background-attachment: scroll !important;
+    }
+}
+
 .hero-section2 {
     min-height: 70vh;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
